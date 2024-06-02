@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+p{
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.911);
+
+}
+
+
+#contenedor{
+    background-color: white;
+    width: 779px;
+}
+
+#cabecera{
+    background-color: gray;
+    width: 779px;
+    height: 80px;
+
+}
+
+#banner{
+    background-color: rgba(228, 78, 51, 0.699);
+    height: 135px;
+}
+
+#contenido{
+    background-color: rgba(228, 78, 51, 0.699);
+    height: 340px;
+}
+
+#piepagina{
+    background-color: rgb(179, 37, 37);
+    height: 60px;
+}
