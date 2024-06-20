@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
-<body>
+<body id="cuerpoPagina">
 <div class="container">
+    <br>
+    <div class="row">
+        <button id="btnFClaro" onclick="cambiarFondo('Claro')" class="btn btn-default">Fondo Claro</button>
+        <button id="btnFOscuro" onclick="cambiarFondo('Oscuro')" class="btn btn-dark">Fondo Oscuro</button>
+    </div>
+
     <form>
         <div class="form-group">
             <label for="txtNombre">Nombre:</label>
@@ -28,8 +35,27 @@
     </form>
 </div>
 
-</body>
+</body>  
 <script>
+
+    function cambiarFondo(fondo){
+        alert("Fondo cambiado a: " + fondo);
+        let pagina = document.getElementById("cuerpoPagina");
+
+        if(fondo === "Claro"){
+            pagina.style.backgroundColor = "peru";
+        }else{
+            pagina.style.backgroundColor = "gray";
+
+        }
+
+    }
+
+
+
+
+
+
     function procesar(){
         let nombre, apellido, documento;
         nombre = document.getElementById("txtNombre").value;
