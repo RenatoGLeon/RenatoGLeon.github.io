@@ -3,51 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MachuPicchu</title>
-    <link href="estilos3.css" rel="stylesheet" type="text/css">
+    <title>Formulario</title>
 </head>
-
 <body>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="txtNombre">Nombre:</label>
+            <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese Usuario">
+        </div><br>
 
-    
-        <div id="contenedor">
-    
-            <div id="cabecera">
-            <h1><strong>TurísticoPerú.com</strong></h1>
-            </div>
-    
-            <div id="banner">
+        <div class="form-group" >
+            <label for="txtApellido">Apellido:</label>
+            <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese Apellido">
+        </div><br>
+        
+        <div class="form-group">
+            <label for="txtDocumento">Documento:</label>
+            <input type="text" class="form-control" id="txtDocumento" placeholder="Ingrese Documento">
+        </div><br>
 
-                <img src="imgs/Machu.png" alt="Imagen Machu Picchu" height="150" width="779"/>
-
-            </div>
-    
-            <div id="contenido">
-            <p>
-                Machu Picchu es considerada, al mismo tiempo, obra maestra de la arquitectura y la ingeniería. Sus peculiares características arquitectónicas y paisajísticas, y el velo de misterio que ha tejido a su alrededor buena parte de la literatura publicada sobre el sitio, lo han convertido en uno de los destinos turísticos más famosos del planeta, así como una de las siete maravillas del mundo moderno. <br> <br>
-                En el idioma quechua, machu significa 'viejo o anciano', mientras que pikchu significa 'pico, montaña o prominencia con una amplia base que termina en puntas agudas'; por lo tanto, el nombre del sitio significa 'montaña vieja'. <br> <br>
-                La temperatura es cálida con aire húmedo durante el día, y fresca por la noche, oscila entre los 12 y los 24 grados centígrados. La zona es muy lluviosa, en especial entre noviembre y marzo. Las lluvias, que son copiosas, alternan rápido con intenso brillo solar. <br> <br>
-                La zona arqueológica es accesible, bien desde los caminos post-incaicos que llegan hasta ella, o bien utilizando la carretera Hiram Bingham (que asciende la cuesta del cerro Machu Picchu desde la antigua estación de tren de Puente Ruinas, al fondo del cañón). Ninguna de las dos formas exime al visitante del precio de ingreso al complejo.
-
-
-            </p>
-            </div>
-    
-            <div id="piepagina">
-                <p>@Copyright Oswaldo Pastor Huamán, Prohibida su reproducción parcial o total de esta web. <br> 
-                   Av. Los Brillantes 395, La Victoria Lima - Perú / Teléfonos: 990680314 <br>   
-                   Email: pspastor@cibertec.edu.pe / Web Site: https://www.eduticvirtrual.com/campus
-                </p>
-            </div>
-   
-    
-        </div>
-
-
-
-
-
-
+        <button onclick="procesar()" type="button" class="btn btn-primary">Procesar</button>
+        <button onclick="limpiar()" type="button" class="btn btn-danger">Limpiar</button>
+    </form>
+</div>
 
 </body>
+<script>
+    function procesar(){
+        let nombre, apellido, documento;
+        nombre = document.getElementById("txtNombre").value;
+        apellido = document.getElementById("txtApellido").value;
+        documento = document.getElementById("txtDocumento").value;
+
+        let mensaje =   "Nombre: " + nombre +
+                        "\nApellido: " + apellido +
+                        "\nDocumento: " + documento;
+
+        let mensaje2 = `
+                        Nombre: ${nombre}
+                        Apellido: ${apellido}
+                        Documento: ${documento}
+                        `
+        alert(mensaje);
+    }
+</script>
 </html>
