@@ -14,6 +14,14 @@
         <button id="btnFOscuro" onclick="cambiarFondo('Oscuro')" class="btn btn-dark">Fondo Oscuro</button>
     </div>
 
+    <div>
+        <button onclick="prender()" class="btn btn-primary">Prender</button>
+        <button onclick="apagar()" class="btn btn-danger">Apagar</button>
+
+        <img id="foco" src="imgs/focoApagado.png" width="300px" height="300px" alt="Esto es un foco">
+        <img id= "foco"src="" alt="">
+    </div>
+
     <form>
         <div class="form-group">
             <label for="txtNombre">Nombre:</label>
@@ -51,11 +59,6 @@
 
     }
 
-
-
-
-
-
     function procesar(){
         let nombre, apellido, documento;
         nombre = document.getElementById("txtNombre").value;
@@ -72,6 +75,19 @@
                         Documento: ${documento}
                         `
         alert(mensaje);
+    }
+
+    function apagar(){
+
+        let foco = document.getElementById("foco");
+        foco.setAttribute("src", "imgs/focoApagado.png");
+        //alert(foco.getAttribute("src")
+    }
+
+    function prender(){
+
+        let foco = document.getElementById("foco");
+        foco.setAttribute("src", "imgs/focoEncendido.png");
     }
 </script>
 </html>
