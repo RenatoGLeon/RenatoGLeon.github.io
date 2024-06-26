@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+#container{
+    background-color: white;
+    height: 900px;
+    width:  1300px;
+    margin: 0 auto;
+
+}
+#header{
+    height: 90px;
+    width: 1300px;
+}
+#header2{
+    background-color: white;
+    height: 100px;
+    width: 1300px;
+    padding: 5px;
+}
+#header-cab-1{
+    float: left;
+}
+#header-cab-2{
+    margin-right: 10px;
+    margin-top: 5px;
+    float: right;
+}
+#button{
+    height: 40px;
+    width: 110px;
+    font-size: 16px;
+    background-color: rgb(192, 90, 90);
+    color: white;   
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-family:'Times New Roman', Times, serif;
+    border: 1px black solid;
+}
+#button2{
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    background-color: rgb(195, 112, 112);
+    color: white;   
+    margin-top: 20px;
+    margin-right: 1px;
+    border-radius: 5px;
+    font-family:'Times New Roman', Times, serif;
+    border: 1px black solid;
+}
+
+#banner2{
+    background-color: white;
+    border-top: 4px rgb(182, 31, 31) solid;
+    width: 1300px;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    color: red;
+}
+.listas{
+    display: inline-block;
+    text-align: center;
+    margin: 16px;
+    color: rgb(192, 65, 65);
+    width: 160px;
+}
+#menuletra{
+    color: rgba(0, 0, 0, 0.777);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+#formulario{
+    background-color: white;
+    border: 40px rgba(197, 14, 88, 0.71) solid;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: justify;
+    margin-top: 5px;
+    height: 250px;
+    color: black;
+}
+#bloque{
+    margin-left: 50px;
+}
+
+#publi{
+    border: 10px solid rgba(207, 31, 89, 0.95);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.card-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 22px;
+    text-align: justify;
+}
+.card-text{
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+}
+#footer{
+    border-top: 5px red solid;
+    padding-top:  10px;
+    margin-top: 10px;
+    height: 200px;
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
